@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btn_check_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:text="(╯°口°)╯ 戳这里检查更新~"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="更新出什么奇怪的东西我可不管~"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#888888"
+        android:textStyle="italic"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tool_qr_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_check_update"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="更新功能正在开发中...\n下一个版本才可以检查更新的哦~"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
+     
+</RelativeLayout>

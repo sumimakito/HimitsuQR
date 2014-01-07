@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#66aaff"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tool_qr_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:text="使用教程"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="生成二维码:\n点击&quot;生成二维码&quot;按钮，在弹出的界面输入要加密的内容及密码，点击&quot;生成加密二维码&quot;按钮即可生成加密二维码，可以截图后发给好友\n\n扫描二维码:\n点击&quot;扫描二维码&quot;按钮，在弹出的窗口中先输入好友告诉自己的密码，点击&quot;扫描二维码&quot;按钮，在弹出的程序中扫描加密过的二维码(未安装的将在扫描前自动安装)，部分设备需要选取默认启动的应用，扫描之后将显示解密结果"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

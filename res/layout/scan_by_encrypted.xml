@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/SBEContentEncrypted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="输入加密后的字符串" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/SBEPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SBEContentEncrypted"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/SBEContentEncrypted"
+        android:ems="10"
+        android:hint="输入加密密码"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/SBEBtnDecrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="字符串解密" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/SBEBtnDecrypt"
+        android:layout_alignLeft="@+id/SBEPassword"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/SBEPassword" >
+
+        <TextView
+            android:id="@+id/SBEDecOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</RelativeLayout>

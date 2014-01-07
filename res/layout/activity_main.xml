@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/main_btn_scancode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="扫描二维码" />
+
+    <TextView
+        android:id="@+id/SBEDecOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Himitsu 加密二維碼"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/main_btn_sbe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_btn_scancode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="通过字符串解密条码"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/main_btn_newcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_btn_sbe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="生成二维码" />
+
+    <ImageView
+        android:id="@+id/newcodeQRView"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_above="@+id/main_btn_newcode"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/himitsu_logo" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/SBEDecOutput"
+        android:layout_below="@+id/SBEDecOutput"
+        android:text="V2.1.0" />
+
+</RelativeLayout>
